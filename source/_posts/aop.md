@@ -5,7 +5,7 @@ tags: [web]
 ---
 
 最近做的一个项目，是需要用到aop拦截的，顺便总结一下，感觉概念比较绕。  
-简单点来说，spring aop 和 aspectj 都是做aop拦截的框架，而cglib是和jdk动态代理一样是用来生成代理类的库。aspectj支持编译/加载织入 。
+简单点来说，spring aop 和 aspectj 都是做aop拦截的框架，而cglib是和jdk动态代理一样是用来生成代理类的库。aspectj支持编译/加载织入, 从而比前两者的代理能力高那么一点点。
 <!-- more -->
 ## spring aop
 spring aop 是spring 大家庭中的一员，它支持jdk动态代理以及cglib代理。默认对于有接口的实现，spring使用jdk动态代理；对于没有接口的实现，使用cglib代理。当指定(springboot 应用)
